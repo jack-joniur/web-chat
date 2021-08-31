@@ -25,25 +25,26 @@
   border-right: 1px inset #52525cad;
   grid-column: 3/8;
 }
-td{
+td {
   display: block;
   text-align: center;
 }
-td img {
+td img[src="img/580b57fcd9996e24bc43c538.png"] {
   margin-bottom: 20px;
-  width: 50px;
-  transition: .3s;
+  width: 30px;
+  transition: 0.2s;
 }
-a img{
-  width: 50px;
-}
-td.top{
+td.top {
   margin-bottom: 30px;
   padding: 10px 0;
   border-bottom: 2px inset #52525cad;
 }
-td img:hover{
-  border-right: 3px solid #5D61ED;
-  padding-right: 5px;
+td.top img {
+  width: 50px;
+  cursor: pointer;
+}
+td img[src="img/580b57fcd9996e24bc43c538.png"]:hover {
+  border-right: 3px solid #5d61ed;
+  padding-right: 10px;
   cursor: pointer;
 }
