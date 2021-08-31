@@ -26,9 +26,24 @@
   grid-column: 3/8;
 }
 td{
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
-td img{
-    width: 50px;
+td img {
+  margin-bottom: 20px;
+  width: 50px;
+  transition: .3s;
+}
+a img{
+  width: 50px;
+}
+td.top{
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-bottom: 2px inset #52525cad;
+}
+td img:hover{
+  border-right: 3px solid #5D61ED;
+  padding-right: 5px;
+  cursor: pointer;
 }
