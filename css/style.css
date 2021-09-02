@@ -4,7 +4,7 @@
   padding: 0;
   font-family: "Comic sans MS";
 }
-*::selection{
+*::selection {
   background-color: #5d61ed;
   color: white;
 }
@@ -66,35 +66,35 @@ td img[src="img/580b57fcd9996e24bc43c538.png"]:hover {
 /* end Create the laft bar */
 
 /* Create the chat room navbar */
-h1{
+h1 {
   text-align: center;
   color: rgb(241, 238, 238);
   font-size: 35;
   margin-top: 10px;
 }
-section.chat-room{
+section.chat-room {
   height: 100%;
   grid-column: 3/10;
 }
-section.favourit{
+section.favourit {
   width: 100%;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-section.chat-room h4{
+section.chat-room h4 {
   color: gray;
-  margin: 10px 5px 25px 15px ;
+  margin: 10px 5px 25px 15px;
   grid-column: 1/8;
 }
-section.favourit img{
+section.favourit img {
   margin: 10px 2px 10px 10px;
   cursor: pointer;
   grid-column: 1/1;
   width: 35px;
 }
-section.favourit p{
+section.favourit p {
   color: #717075;
   grid-column: 2/6;
   margin-left: 20px;
@@ -102,9 +102,10 @@ section.favourit p{
   cursor: pointer;
   transition: 0.2s;
 }
-section.favourit p:hover{
-color: #9f9ea0;
+section.favourit p:hover {
+  color: #9f9ea0;
 }
+
 
 
 /* end Create the chat room navbar */
