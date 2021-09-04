@@ -105,4 +105,63 @@ section.favourit p {
 section.favourit p:hover {
   color: #9f9ea0;
 }
+section.Direct {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+section.Direct p.profile {
+  padding: 3px 9px;
+  margin: 0 15px 20px 32px;
+  border-radius: 50%;
+  text-transform: capitalize;
+}
+p.profile_1 {
+  color: rgb(255, 150, 168);
+  background-color: rgba(255, 150, 167, 0.205);
+  border: 1px solid rgb(255, 150, 168);
+}
+
+p.profile_2 {
+  color: rgb(88, 191, 209);
+  background-color: rgb(88, 191, 209, 0.205);
+  border: 1px solid rgb(88, 191, 209);
+}
+
+p.profile_3 {
+  color: rgb(204, 166, 41);
+  background-color: rgb(204, 166, 41,0.205);
+  border: 1px solid rgb(204, 166, 41);
+}
+
+p.profile_4 {
+  color: rgb(204, 41, 82);
+  background-color: rgb(204, 41, 82, .205);
+  border: 1px solid rgb(204, 41, 82);
+  padding: 3px 10px !important;
+}
+
+p.profile_5 {
+  color: rgb(107, 226, 88);
+  background-color: rgb(107, 226, 88,0.205);
+  border: 1px solid rgb(107, 226, 88);
+  padding: 3px 8px !important;
+}
+
+p.profile_6 {
+  color: rgb(187, 121, 218);
+  background-color: rgb(187, 121, 218,0.205);
+  border: 1px solid rgb(187, 121, 218);
+  padding: 3px 10px !important;
+}
+
+section.Direct p.caption {
+  margin-top: 3px;
+  color: #717075;
+  cursor: pointer;
+  transition: 0.25s;
+}
+section.Direct p.caption:hover {
+  color: #9f9ea0;
+}
 /* end Create the chat room navbar */
