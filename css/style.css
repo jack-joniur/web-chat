@@ -130,27 +130,27 @@ p.profile_2 {
 
 p.profile_3 {
   color: rgb(204, 166, 41);
-  background-color: rgb(204, 166, 41,0.205);
+  background-color: rgb(204, 166, 41, 0.205);
   border: 1px solid rgb(204, 166, 41);
 }
 
 p.profile_4 {
   color: rgb(204, 41, 82);
-  background-color: rgb(204, 41, 82, .205);
+  background-color: rgb(204, 41, 82, 0.205);
   border: 1px solid rgb(204, 41, 82);
   padding: 3px 10px !important;
 }
 
 p.profile_5 {
   color: rgb(107, 226, 88);
-  background-color: rgb(107, 226, 88,0.205);
+  background-color: rgb(107, 226, 88, 0.205);
   border: 1px solid rgb(107, 226, 88);
   padding: 3px 8px !important;
 }
 
 p.profile_6 {
   color: rgb(187, 121, 218);
-  background-color: rgb(187, 121, 218,0.205);
+  background-color: rgb(187, 121, 218, 0.205);
   border: 1px solid rgb(187, 121, 218);
   padding: 3px 10px !important;
 }
@@ -163,5 +163,45 @@ section.Direct p.caption {
 }
 section.Direct p.caption:hover {
   color: #9f9ea0;
+}
+section.channel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+div.child {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  transition: 0.25s;
+  padding: 10px 5px;
+}
+section.channel p.channelFile {
+  padding: 3px 9px;
+  margin: 0 15px 0 32px;
+  border-radius: 50%;
+  text-transform: capitalize;
+  color: rgb(95, 95, 95);
+  background-color: rgb(95, 95, 95, 0.205);
+  border: 1px solid rgb(95, 95, 95);
+}
+section.channel div.child:hover > p.channelFile{
+  color: rgb(63, 63, 63);
+  background-color: rgb(63, 63, 63, 0.205);
+  border: 1px solid rgb(63, 63, 63);
+  
+}
+section.channel p.caption {
+  margin-top: 3px;
+  color: #717075;
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+}
+section.channel p.caption:hover{
+  color: #9f9ea0;
+}
+section.channel div.child:hover{
+  background-color: #5d61ed;
 }
 /* end Create the chat room navbar */
