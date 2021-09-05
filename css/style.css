@@ -164,6 +164,8 @@ section.Direct p.caption {
 section.Direct p.caption:hover {
   color: #9f9ea0;
 }
+/*************** Create channel ****************/
+
 section.channel {
   display: flex;
   flex-wrap: wrap;
@@ -185,12 +187,6 @@ section.channel p.channelFile {
   background-color: rgb(95, 95, 95, 0.205);
   border: 1px solid rgb(95, 95, 95);
 }
-section.channel div.child:hover > p.channelFile{
-  color: rgb(63, 63, 63);
-  background-color: rgb(63, 63, 63, 0.205);
-  border: 1px solid rgb(63, 63, 63);
-  
-}
 section.channel p.caption {
   margin-top: 3px;
   color: #717075;
@@ -202,6 +198,9 @@ section.channel p.caption:hover{
   color: #9f9ea0;
 }
 section.channel div.child:hover{
-  background-color: #5d61ed;
+  background-color: #5d62ed7c;
 }
+
+/*************** end Create channel ****************/
+
 /* end Create the chat room navbar */
