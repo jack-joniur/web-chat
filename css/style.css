@@ -208,6 +208,7 @@ div.bg-child {
 /* end Create the chat room navbar */
 
 /* Create main room */
+/***************** Create nav-main ********************/
 section.nav-main {
   padding: 2px 5px 15px 5em;
   display: flex;
@@ -258,14 +259,14 @@ section.nav-main div.left-contact {
   float: right;
   cursor: pointer;
 }
-section.nav-main div.left-contact p{
+section.nav-main div.left-contact p {
   transition: 0.25s;
 }
 section.nav-main div.left-contact p:hover {
   color: rgb(106, 219, 181);
 }
 section.nav-main div.left-contact p.about {
-  border:1px solid rgb(106, 219, 181);
+  border: 1px solid rgb(106, 219, 181);
   height: fit-content;
   width: 22px;
   text-align: center;
@@ -273,9 +274,78 @@ section.nav-main div.left-contact p.about {
   border-radius: 50%;
 }
 section.nav-main div.left-contact p.about:hover {
-  border:1px solid rgb(106, 219, 181);
+  border: 1px solid rgb(106, 219, 181);
   color: rgb(106, 219, 181);
-  background-color: rgb(78, 165, 136,0.205);
+  background-color: rgb(78, 165, 136, 0.205);
 }
+/***************** end Create nav-main ********************/
+
+/***************** Create chat-box ********************/
+section.chat-box {
+  width: 100%;
+  color: white;
+}
+section.chat-box p.Ms-me {
+  float: right;
+  direction: ltr;
+  padding: 5px 10px;
+  margin: 5px 100px 5px 100%;
+  border: 1px solid rgb(106, 219, 181);
+  width: fit-content;
+  color: rgb(106, 219, 181);
+  background-color: rgb(106, 219, 181, 0.12);
+  border-radius: 4px 4px 2px 5px;
+}
+section.chat-box p.Ms-you {
+  float: left;
+  direction: ltr;
+  padding: 5px 10px;
+  margin: 5px 100% 5px 100px;
+  border: 1px solid #d3d6df69;
+  width: fit-content;
+  color: #d3d6dfcb;
+  background-color: #25262c;
+  border-radius: 4px 4px 5px 2px;
+}
+p.caption-me {
+  margin: 5px 100px 5px 100%;
+  float: right;
+  font-size: 13px;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  color: #cecdcf;
+}
+p.caption-me span {
+  font-size: 11px !important;
+  margin: 2px;
+  color: #717075;
+}
+p.caption-you{
+  margin: 5px 100% 5px 75px;
+  float: left;
+  font-size: 13px;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  color: #cecdcf;
+}
+p.caption-you span.text{
+  margin: 0 2px;
+}
+p.caption-you span.time{
+  font-size: 11px;
+  margin: 2px;
+  color: #717075;
+}
+p.caption-you img.image-text{
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin: 0 10px 0 0 ;
+}
+/***************** end Create chat-box ********************/
 
 /* end Create main room */
