@@ -194,13 +194,88 @@ section.channel p.caption {
   transition: 0.25s;
   text-align: center;
 }
-section.channel p.caption:hover{
+section.channel p.caption:hover {
   color: #9f9ea0;
 }
-section.channel div.child:hover{
+section.channel div.child:hover {
   background-color: #5d62ed7c;
 }
-
+div.bg-child {
+  background-color: #4546ac9a;
+}
 /*************** end Create channel ****************/
 
 /* end Create the chat room navbar */
+
+/* Create main room */
+section.nav-main {
+  padding: 2px 5px 15px 5em;
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #52525cad;
+}
+section.nav-main p.profile {
+  padding: 5px 10px;
+  height: fit-content;
+  border-radius: 50%;
+  text-transform: capitalize;
+}
+section.nav-main p.profile_1 {
+  transform: translate(20px, 26px);
+  border: 1px solid rgb(88, 191, 209);
+  background-color: rgb(88, 191, 209);
+  color: rgb(221, 235, 238);
+  z-index: 2;
+  overflow: hidden;
+}
+section.nav-main img.profile-image {
+  z-index: 1;
+  width: 34px;
+  transform: translate(13px, 26px);
+  height: fit-content;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+section.nav-main p.profile_2 {
+  z-index: 0;
+  transform: translate(5px, 26px);
+  border: 1px solid rgb(255, 150, 168);
+  background-color: rgb(255, 150, 168, 0.205);
+  color: rgb(255, 150, 168);
+}
+section.nav-main p.text-online {
+  transform: translate(20px, 30px);
+  text-transform: capitalize;
+  color: rgb(106, 219, 181);
+}
+section.nav-main div.left-contact {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-evenly;
+  transform: translate(16em, 30px);
+  color: rgb(78, 165, 136);
+  float: right;
+  cursor: pointer;
+}
+section.nav-main div.left-contact p{
+  transition: 0.25s;
+}
+section.nav-main div.left-contact p:hover {
+  color: rgb(106, 219, 181);
+}
+section.nav-main div.left-contact p.about {
+  border:1px solid rgb(106, 219, 181);
+  height: fit-content;
+  width: 22px;
+  text-align: center;
+  transition: 0.25s;
+  border-radius: 50%;
+}
+section.nav-main div.left-contact p.about:hover {
+  border:1px solid rgb(106, 219, 181);
+  color: rgb(106, 219, 181);
+  background-color: rgb(78, 165, 136,0.205);
+}
+
+/* end Create main room */
