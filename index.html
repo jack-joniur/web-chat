@@ -146,21 +146,64 @@
         <!-- end Create nav main -->
         <!-- Create main chat (chat box) -->
         <section class="chat-box">
+          <!-- Create 4 message in chat box -->
           <p class="Ms-me">hello:)</p>
-          <p class="Ms-me">good moornig</p>
+          <p class="Ms-me" style="min-width: max-content">good moornig</p>
           <p class="caption-me"><span>3:12PM</span> you</p>
-          <p class="Ms-you">haya</p>
-          <p class="Ms-you">thanks for all</p>
+          <p class="Ms-you" style="min-width: max-content">haya</p>
+          <p class="Ms-you" style="min-width: max-content">thanks for all</p>
           <p class="caption-you">
             <img src="img/Geek.jpg" class="image-text" alt="" /><span
               class="text"
-              >you</span
-            ><span class="time">3:12PM</span>
+              >AmirAli </span
+            ><span class="time">3:14PM</span>
           </p>
+          <!-- end Create 4 message in chat box -->
+          <p class="Ms-me" style="min-width: max-content">
+            glad to meet you , im pleasur to meeting you :)
+          </p>
+          <p class="caption-me"><span>3:14PM</span> you</p>
+          <p class="Ms-you" style="min-width: max-content">hi guys !</p>
+          <p class="caption-you">
+            <img src="img/N.png" class="image-text N" alt="" />
+            <span class="text">Nader</span><span class="time">3:14PM</span>
+          </p>
+          <p class="Ms-you" style="min-width: max-content">
+            <img
+              onclick="Click()"
+              src="img/play_icon_134504.png"
+              width="30px"
+              class="icon"
+              alt=""
+            /><img class="image-Ms" src="img/866-200x300.jpg" alt="" />
+          </p>
+          <p class="Ms-you" style="min-width: max-content">oh this is very Gooood !</p>
+          <p class="caption-you">
+            <img src="img/Geek.jpg" class="image-text" alt="" /><span
+              class="text"
+              >AmirAli </span
+            ><span class="time">3:15PM</span>
+          </p>
+          <!-- make send box -->
+          <div class="send-box">
+            <img src="img/Geek.jpg" width="30px" style="border-radius:50%;border: 1px solid gray;margin: 10px 10px 0 100px  ;" alt="">
+            <input type="text" placeholder="Please Type the text in input" class="inp-type">
+            <input type="submit" value="Send" class="send">
+          </div>
+          <!-- end make send box -->
         </section>
         <!-- end Create main chat (chat box) -->
       </section>
     </section>
     <!-- end Create Container -->
   </body>
+  <script>
+    function Click() {
+      let find, oper;
+      find = document.getElementsByClassName("image-Ms")[0];
+      oper = document.getElementsByClassName("icon")[0];
+      oper.style.zIndex = 0;
+      find.style.filter = "blur(0px)";
+    }
+  </script>
 </html>
