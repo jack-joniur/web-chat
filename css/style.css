@@ -227,7 +227,6 @@ section.nav-main p.profile_1 {
   background-color: rgb(88, 191, 209);
   color: rgb(221, 235, 238);
   z-index: 2;
-  overflow: hidden;
 }
 section.nav-main img.profile-image {
   z-index: 1;
@@ -322,7 +321,7 @@ p.caption-me span {
   margin: 2px;
   color: #717075;
 }
-p.caption-you{
+p.caption-you {
   margin: 5px 100% 5px 75px;
   float: left;
   font-size: 13px;
@@ -332,20 +331,68 @@ p.caption-you{
   cursor: pointer;
   color: #cecdcf;
 }
-p.caption-you span.text{
+p.caption-you span.text {
   margin: 0 2px;
 }
-p.caption-you span.time{
+p.caption-you span.time {
   font-size: 11px;
   margin: 2px;
   color: #717075;
 }
-p.caption-you img.image-text{
-  width: 20px;
+p.caption-you img.image-text {
+  width: 25px;
   border-radius: 50%;
   border: 1px solid gray;
-  margin: 0 10px 0 0 ;
+  margin: 0 10px 0 0;
 }
+img.N {
+  border: 1px inset #53b6c7 !important;
+}
+section.chat-box p.Ms-you img.image-Ms {
+  border-radius: 5px;
+  filter: blur(5px);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  width: 90%;
+}
+.icon {
+  position: absolute;
+  z-index: 1;
+  transform: translate(5em, 8em);
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+div.send-box {
+  margin: 10px;
+  padding-top: 10px;
+}
+input.inp-type {
+  width: 50%;
+  height: 40px;
+  outline: none;
+  transition: 0.15s;
+  background-color: #25262c;
+  border: none;
+  border-radius: 2px;
+  color: rgb(195, 195, 195);
+  padding: 2px 8px;
+  font-size: 15px;
+}
+input.inp-type:focus {
+  outline: 3px solid #5d62ed62;
+}
+input.send {
+  height: 40px;
+  width: 60px;
+  background-color: #5d61ed;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
 /***************** end Create chat-box ********************/
 
 /* end Create main room */
