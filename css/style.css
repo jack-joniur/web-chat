@@ -9,10 +9,13 @@
   color: white;
 }
 /* end all style */
-
+body{
+  overflow: hidden;
+}
 .container {
   background-color: #1f2029;
-  height: 100%;
+  min-height: 100%; 
+  max-height: 100%;
   width: 100%;
   position: relative;
   display: grid;
@@ -283,6 +286,9 @@ section.nav-main div.left-contact p.about:hover {
 section.chat-box {
   width: 100%;
   color: white;
+  overflow-y: scroll;
+  max-height:80%;
+
 }
 section.chat-box p.Ms-me {
   float: right;
@@ -293,10 +299,12 @@ section.chat-box p.Ms-me {
   width: fit-content;
   color: rgb(106, 219, 181);
   background-color: rgb(106, 219, 181, 0.12);
+  /* position: static; */
   border-radius: 4px 4px 2px 5px;
 }
 section.chat-box p.Ms-you {
   float: left;
+  /* position: static; */
   direction: ltr;
   padding: 5px 10px;
   margin: 5px 100% 5px 100px;
@@ -305,6 +313,7 @@ section.chat-box p.Ms-you {
   color: #d3d6dfcb;
   background-color: #25262c;
   border-radius: 4px 4px 5px 2px;
+  /* position: relative; */
 }
 p.caption-me {
   margin: 5px 100px 5px 100%;
@@ -368,6 +377,8 @@ section.chat-box p.Ms-you img.image-Ms {
 div.send-box {
   margin: 10px;
   padding-top: 10px;
+  position: fixed;
+  width: 60%;
 }
 input.inp-type {
   width: 50%;
@@ -391,8 +402,36 @@ input.send {
   border: none;
   border-radius: 2px;
   color: white;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+input.send:focus {
+  background-color: #474cec;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3c3c3f;
+  border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #888; 
 }
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(112, 112, 112);
+}
+::-webkit-scrollbar-thumb:active {
+  background: #555;
+}
 /***************** end Create chat-box ********************/
 
 /* end Create main room */
