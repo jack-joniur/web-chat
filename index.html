@@ -164,12 +164,14 @@
           </p>
           <p class="caption-me"><span>3:14PM</span> you</p>
           <p class="Ms-you" style="min-width: max-content">hi guys !</p>
+          <p class="Ms-you" style="min-width: max-content">whats your Doing?</p>
+          <p class="Ms-you" style="min-width: max-content">I Gaming in day</p>
           <p class="caption-you">
             <img src="img/N.png" class="image-text N" alt="" />
             <span class="text">Nader</span><span class="time">3:14PM</span>
           </p>
 
-          <p class="Ms-you" style=" position: relative; min-width: max-content">
+          <p class="Ms-you" style="position: relative; min-width: max-content">
             <img
               onclick="Click()"
               src="img/play_icon_134504.png"
@@ -205,21 +207,45 @@
             placeholder="Please Type the text in input"
             class="inp-type"
           />
-          <input type="submit" value="Send" class="send" />
+          <input type="submit" value="Send" class="send" onclick="message()" />
         </div>
         <!-- end make send box -->
         <!-- end Create main chat (chat box) -->
       </section>
+
+      <!-- Create the info box -->
+
+      <section class="col-right">
+        <!-- make info acc -->
+        <section class="info-acc">
+          <div class="exit-box">
+            <div class="exit exit-1"></div>
+            <div class="exit exit-2"></div>          
+          </div>
+          <br />
+          <img src="img/Geek.jpg" title="AmirAli (Geek-profile)" class="image-info" alt="" />
+          <h2 class="des-info-name">AmirAli</h2>
+          <p class="des-info-email">nasrollahiamirali@gmail.com</p>
+          <div class="items">
+            <div class="item item-1">VC</div>
+            <div class="item item-2">MC</div>
+            <div class="item item-3">PC</div>
+          </div>
+        </section>
+        <!-- end make info acc -->
+
+        <!-- make share -->
+        <section class="share"></section>
+        <!-- make share -->
+
+        <!-- make button -->
+        <section class="button-user"></section>
+        <!-- make button -->
+      </section>
+
+      <!-- end Create the info box -->
     </section>
     <!-- end Create Container -->
   </body>
-  <script>
-    function Click() {
-      let find, oper;
-      find = document.getElementsByClassName("image-Ms")[0];
-      oper = document.getElementsByClassName("icon")[0];
-      oper.style.zIndex = 0;
-      find.style.filter = "blur(0px)";
-    }
-  </script>
+  <script src="js/project.js"></script>
 </html>
