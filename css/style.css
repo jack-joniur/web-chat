@@ -9,12 +9,12 @@
   color: white;
 }
 /* end all style */
-body{
+body {
   overflow: hidden;
 }
 .container {
   background-color: #1f2029;
-  min-height: 100%; 
+  min-height: 100%;
   max-height: 100%;
   width: 100%;
   position: relative;
@@ -287,8 +287,7 @@ section.chat-box {
   width: 100%;
   color: white;
   overflow-y: scroll;
-  max-height:80%;
-
+  max-height: 750px;
 }
 section.chat-box p.Ms-me {
   float: right;
@@ -299,6 +298,7 @@ section.chat-box p.Ms-me {
   width: fit-content;
   color: rgb(106, 219, 181);
   background-color: rgb(106, 219, 181, 0.12);
+  min-width: max-content;
   /* position: static; */
   border-radius: 4px 4px 2px 5px;
 }
@@ -408,6 +408,7 @@ input.send {
 }
 input.send:focus {
   background-color: #474cec;
+  box-shadow: 0 1px 3px 1px #5d62edc7;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -418,11 +419,11 @@ input.send:focus {
   background: #3c3c3f;
   border-radius: 3px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
@@ -435,3 +436,76 @@ input.send:focus {
 /***************** end Create chat-box ********************/
 
 /* end Create main room */
+
+/*************** Create the info box ***************/
+section.col-right {
+  background-color: #2b2b35;
+  grid-column: 8/10;
+}
+section.col-right section.info-acc {
+  width: 100%;
+}
+section.col-right section.info-acc div.exit-box div.exit {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(173, 173, 173);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+div.exit-1 {
+  margin: 15px;
+  transform: rotate(45deg) translate(10px, 10px);
+}
+div.exit-2 {
+  margin: 15px;
+  transform: rotate(-45deg);
+}
+section.col-right section.info-acc div.exit-box:hover > div.exit {
+  background-color: rgb(228, 228, 228);
+}
+section.col-right section.info-acc img {
+  width: 100px;
+  border: 3px solid rgb(58, 58, 58);
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  margin: 60px auto 10px;
+}
+section.col-right section.info-acc h2.des-info-name {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 5px;
+}
+section.col-right section.info-acc p.des-info-email {
+  text-align: center;
+  color: rgb(106, 219, 181);
+  margin-bottom: 10px;
+}
+div.items {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+div.items div.item {
+  color: lightgray;
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+transition: all 0.2s ease-in;
+}
+div.items div.item:hover{
+  background-color: lightgray;
+  color: #2b2b35;
+}
+div.items div.item-1{
+  padding: 10px 11px;
+}
+div.items div.item-3{
+  padding: 10px 12px;
+}
+/*************** end Create the info box ***************/
