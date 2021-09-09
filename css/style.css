@@ -508,4 +508,16 @@ div.items div.item-1{
 div.items div.item-3{
   padding: 10px 12px;
 }
+section.share h3.share-title{
+  color: rgb(202, 202, 202);
+  font-weight: lighter;
+  margin: 5px 30px;
+}
+section.share div.row-1 img.G{
+  width: 30px;
+  padding: 15px;
+  margin: 10px 30px;
+  border: 1px solid gray ;
+  border-radius: 5px;
+}
 /*************** end Create the info box ***************/
