@@ -606,6 +606,7 @@ hr {
 section.btn-favourite {
   width: 100%;
   margin: 10px 20px;
+  /* display: flex; */
 }
 /****************** endCreate Button *****************/
 /*************** end Create the info box ***************/
