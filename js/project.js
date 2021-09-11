@@ -34,8 +34,8 @@ function message() {
   }
   // end am and pm fotmatter
   for (let i = 2; i < test.length; i++) {
-   test[i].appendChild(span);
-   span.innerHTML =  formatAMPM(new Date);
+    test[i].appendChild(span);
+    span.innerHTML = formatAMPM(new Date());
   }
   inp.value = null;
 }
